@@ -1,8 +1,8 @@
-import SkyXElement from "./components/SkyXElement";
 import SkyXShot from "../videos/SkyXShot_compressed.mp4";
 import BackgroundVideo from "next-video/background-video";
-import Details from "./components/Details";
 import BottomDetails from "./components/BottomDetails";
+import SkyXInteractive from "./components/SkyXInteractive";
+import Container from "./components/Container";
 
 const Home = () => {
   return (
@@ -13,12 +13,10 @@ const Home = () => {
         src={SkyXShot}
       ></BackgroundVideo>
 
-      {/* The overlay and SKYX element */}
-      <div className="h-full w-full bg-black/20 absolute top-0 left-0 z-[20]"></div>
-      <SkyXElement />
+      {/* The overlay to darken the background video*/}
+      <div className="h-full w-full bg-black/20 absolute top-0 left-0 z-20"></div>
 
-      {/* The left side panel for details */}
-      <Details />
+      <Container />
 
       {/* The details on the bottom part */}
       <BottomDetails />

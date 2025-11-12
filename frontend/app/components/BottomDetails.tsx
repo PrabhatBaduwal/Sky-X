@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const BottomDetails = () => {
   return (
-    <div className="h-[25%] py-2 w-full flex flex-row-reverse  justify-between items-end px-10 absolute bottom-0  left-0 z-[50]">
+    <div className="h-[25%] py-2 w-full flex flex-row  justify-start gap-40 items-end absolute bottom-0  left-0 z-50">
       {/* Social Icons */}
-      <div className="flex gap-8 text-orange-200 ">
+      <div className="flex gap-8 text-orange-200 px-6 md:px-0">
         {/* Call Icon */}
         <Link href={"tel:+977 9801042715"}>
           <svg
-            className="md:hidden"
+            className="xl:hidden"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -95,7 +95,7 @@ const BottomDetails = () => {
       </div>
 
       {/* Contact number and location details */}
-      <div className="md:flex gap-8 text-orange-200 hidden">
+      <div className="xl:flex gap-8 text-orange-200 hidden">
         <Link href={"tel:+977 9801042715"}>
           <h1 className="flex justify-center items-center gap-2">
             <svg

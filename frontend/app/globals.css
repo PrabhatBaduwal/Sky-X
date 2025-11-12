@@ -2,4 +2,32 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lovable), sans-serif;
+}
+
+.font-lovable {
+  font-family: var(--font-lovable), sans-serif;
+}
+
+.cls-1 {
+  font-family: CinzelDecorative-Regular, "RVBYM P+ Cinzel Decorative";
+  font-size: 23.45px;
+  letter-spacing: 0.67em;
+}
+
+.cls-12 {
+  fill: url(#linear-gradient);
+}
+
+.cls-1,
+.cls-2 {
+  fill: none;
+  stroke: #fbb040;
+  stroke-miterlimit: 10;
+}
+.cls-1 {
+  stroke-width: 17px;
+}
+.cls-2 {
+  stroke-width: 8px;
 }
