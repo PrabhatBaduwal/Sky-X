@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BottomDetails = () => {
   return (
-    <div className="h-[25%] py-2 w-full flex flex-row  justify-start gap-40 items-end absolute bottom-0  left-0 z-50">
+    <div className="h-[25%] py-2 w-full flex flex-row  justify-end gap-40 pr-6 items-end absolute bottom-0  left-0 z-50">
       {/* Social Icons */}
       <div className="flex gap-8 text-orange-200 px-6 md:px-0">
         {/* Call Icon */}

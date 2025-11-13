@@ -1,7 +1,6 @@
-import SkyXShot from "../videos/SkyXShot_compressed.mp4";
+import SKYXSHOT from "../videos/SKYXSHOT.mp4";
 import BackgroundVideo from "next-video/background-video";
 import BottomDetails from "./components/BottomDetails";
-import SkyXInteractive from "./components/SkyXInteractive";
 import Container from "./components/Container";
 
 const Home = () => {
@@ -10,7 +9,9 @@ const Home = () => {
       {/* Background Video Component */}
       <BackgroundVideo
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
-        src={SkyXShot}
+        src={SKYXSHOT}
+        preload="auto"
+        minResolution="1080p"
       ></BackgroundVideo>
 
       {/* The overlay to darken the background video*/}
